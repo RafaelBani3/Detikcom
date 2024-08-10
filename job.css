@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 300px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ==== Navbar ==== */
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 2400px;
+    margin: auto;
+    z-index: 9;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    -webkit-box-align: center;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar setelah di-scroll */
+
+.navbar-brand{
+    color: #da3d35;
+    font-size: 1.7rem;
+}
+
+.navbar-brand strong{
+    color: #274094;
+    font-size: 1.7rem;    
+}
+
+.navbar.scrolled .navbar-brand{
+    color: #da3d35;
+    font-size: 1.7rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar.scrolled .navbar-brand strong{
+    color: #274094;
+    font-size: 1.7rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav{
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+}
+/* Link */
+.nav-link{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* Link Button Detikcom */
+.detik-link strong{
+    color: #2c4596;
+}
+.detik-link{
+    color: #da3d35;
+}
+
+.login-link{
+    visibility: hidden;
+}
+
+.btn-login{
+    color: black;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+}
+/* === END NAVBAR === */
+
+
+/* === Header Page */
+ .background-image{
+    height: 100%;
+ }
+
+ .background-image img{
+    height: 230px;
+ }
+
+ .background-image .title-background{
+    position: absolute;
+    top: 120px;
+    font-size: 20px;
+    color: white;
+    padding: 0px 150px;
+ }
+
+ .background-image .title-background-2{
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    font-size: 20px;
+    color: white;
+    padding: 0px 150px;
+ }
+/* END HEADER */
+
+.container{
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: -30px -20px 0px 0px #e71212; /* Warna abu-abu muda */
+  }
+
+  .container2{
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: -30px 30px 0px 0px #ef6832,
+    30px -30px 0px 0px #fcb72c; /* Warna abu-abu muda */
+  }
+  
+  .title, .title2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .description, .description2 {
+    line-height: 1.6;
+  }
+
+
+
+/* Footer */
+
+.footer {
+    background-color: white;
+    padding: 0px 150px;
+    padding-bottom: 50px;
+  }
+  
+  .socialmedia-footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+
+  .socialmedia-footer .social-icons {
+    color: #007bff;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 25px;
+  }
+  
+  .social-icons i:hover {
+    color: #da3d35;
+  }
+  
+  .detikcom {
+    font-size: 24px;
+    font-weight: bold;
+    color: #274094;
+  }
+  
+  .detikcom span {
+    color: #da3d35;
+  }
+
+  .footer p{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+  }
+
+  .footer p a{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display:inline;
+    margin: 0px 5px;
+  }
+/* End Footer */
+
+
+/* Responsive */
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: white;
+        height: 74px;
+    }
+
+    .navbar-toggler{
+        border: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        position: fixed;
+        top: 1;
+        right: 0;
+        text-align: left;
+        /* height: 80%; */
+        padding-bottom: 200px;
+        row-gap: 40px;
+        width: 70%;
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 20px;
+    }
+    
+    
+    .navbar-brand strong{
+        color: #274094;
+        font-size: 1.7rem;
+        
+    }
+
+    .navbar-brand {
+        font-size: 1.7rem;
+        color: #da3d35;
+    }
+    
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-link {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+    .login-link{
+        visibility: visible;
+        opacity: 1;
+        color: red;
+        text-align: left;
+        padding: 0px 0px;
+    }
+
+    .login{
+        visibility: hidden;
+    }
+
+    .btn-login{
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    /* Footer */
+
+.footer {
+    background-color: white;
+    padding: 0px 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialmedia-footer{
+    display: grid;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .socialmedia-footer .social-icons {
+    color: #007bff;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 25px;
+  }
+  
+  .social-icons i:hover {
+    color: #da3d35;
+  }
+  
+  .detikcom {
+    font-size: 40px;
+    font-weight: bold;
+    color: #274094;
+  }
+  
+  .detikcom span {
+    color: #da3d35;
+  }
+
+  .footer p{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+  }
+
+  .footer p a{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display:inline;
+    margin: 0px 5px;
+  }
+
+  /* Responsiveness untuk container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: -10px -10px 0px 0px #e71212; /* Mengurangi ukuran shadow untuk mobile */
+}
+
+.container2{
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: -10px 10px 0px 0px #ef6832,
+    10px -10px 0px 0px #fcb72c; /* Warna abu-abu muda */
+  }
+  
+
+/* Responsiveness untuk judul */
+.title, .title2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Responsiveness untuk deskripsi */
+.description, .description2 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Responsiveness untuk footer */
+.footer {
+    padding: 0px 20px;
+    padding-bottom: 30px;
+}
+
+.socialmedia-footer {
+    display: block;
+    text-align: center;
+}
+
+.socialmedia-footer .social-icons {
+    font-size: 20px;
+}
+
+.detikcom {
+    font-size: 30px;
+}
+
+/* Responsive Header Image */
+.background-image img {
+    width: 100%;
+    height: 250px;
+}
+
+.background-image .title-background-2{
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 0px 150px;
+}
+
+/* Responsive Title Background */
+.background-image .title-background,
+.background-image .title-background-2 {
+    padding: 20px 30px;
+    font-size: 18px;
+    top: 100px;
+}
+}
+
